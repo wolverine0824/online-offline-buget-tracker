@@ -1,70 +1,38 @@
 # Unit 19 PWA Homework: Online/Offline Budget Trackers
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+Budget Tracker (PWA)
+Description
+Budget Tracker is a progressive web application that allows users to track their budgets by adding expenses and deposits to their budget through the "Add/Subtract Funds" buttons. They are able to add a transaction with or without a connection. When a user enters a transaction while offline, these transactions are stored in the indexedDB, and transferred to the database when the user comes back online.
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+Table of Contents
+Installation
+Usage
+Example Usage
+License
+Contributing
+Questions
+Installation
+To install the required dependencies, run npm install
 
-Offline Functionality:
+This package assumes there is a MongoDB server running on localhost:27017. If your server is running somewhere else, you can edit server.js to reflect that.
 
-  * Enter deposits offline
+Usage
+To start the server, run npm start. To access the app after starting the server, go to http://localhost:3000 in your browser.
 
-  * Enter expenses offline
+Example Usage
+Deployed App: https://immense-escarpment-03497.herokuapp.com/
 
-When brought back online:
+An example screenshot of the application is below.
 
-  * Offline entries should be added to tracker.
-
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
-
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+<img width="1440" alt="Screen Shot 2021-09-06 at 5 19 40 PM" src="https://user-images.githubusercontent.com/69323735/132412605-31c51225-33b5-469e-a2e6-442815d187fe.png"><img width="1440" alt="Screen Shot 2021-09-06 at 5 33 36 PM" src="https://user-images.githubusercontent.com/69323735/132412616-e06fc08c-13e0-4a09-a3ed-f78d62b6e175.png">
+<img width="1440" alt="Screen Shot 2021-09-06 at 5 33 54 PM" src="https://user-images.githubusercontent.com/69323735/132412625-180824f7-e031-4bb9-a272-a3fbb93829ea.png">
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- - -
+Contributing
+If you want to contribute, open a Pull Request and include a detailed description and screenshots of the changes.
 
-## Commit Early and Often
-
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
-- - -
-
-## Hint
-
-* In order to cache dynamic content, i.e. users' inputs for withdrawals or deposits, incorporate `indexedDB` from the previous module.
-
-* Use [Google](https://www.google.com) or another search engine to research this topic.
+Questions
+If you have any questions about the repo, open an issue or contact ryan-harris directly at Logonpierce@icloud.com GitHub: wolverine0824
