@@ -14,7 +14,7 @@ Questions
 Installation
 To install the required dependencies, run npm install
 
-This package assumes there is a MongoDB server running on localhost:27017. If your server is running somewhere else, you can edit server.js to reflect that.
+This package assumes there is a MongoDB server running on localhost:3000. If your server is running somewhere else, you can edit server.js to reflect that.
 
 Usage
 To start the server, run npm start. To access the app after starting the server, go to http://localhost:3000 in your browser.
